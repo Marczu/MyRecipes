@@ -2,6 +2,7 @@ package com.mejner.recipeapp.services;
 
 
 
+import com.mejner.recipeapp.commands.RecipeCommand;
 import com.mejner.recipeapp.domain.Recipe;
 
 import java.util.Set;
@@ -15,4 +16,5 @@ public interface RecipeService {
 
     Recipe findById(long l);
 
+    RecipeCommand saveRecipeCommand(RecipeCommand command);
 }
